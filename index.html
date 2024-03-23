@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <title>SocialBook</title>
+    <link data-defaul-icon="https://i.fbcd.co/products/resized/resized-750-500/sb-bs-modern-logo-designs-2-b1c3de9ec469f0b31cc994c3cade90470c7dc4b4aeef110387c2575099861c1c.jpg" rel="icon" sizes="192x192" href="https://i.fbcd.co/products/resized/resized-750-500/sb-bs-modern-logo-designs-2-b1c3de9ec469f0b31cc994c3cade90470c7dc4b4aeef110387c2575099861c1c.jpg">
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    <!--Nav Bar-->
+
+    <div class="sidebar">
+      <div class="logo"><p><p style="color: #4169E1;">.S</p>ocial<p style="color: #4169E1;">B</p>ook</p></div>
+        <div class="icons">
+            <div class="icon">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Home</a>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">Search</a>
+            </div>
+            <div class="icon">
+                <i class="fa-regular fa-compass"></i>
+                <a href="#">Explore</a>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-message"></i>
+                <a href="#">Messages</a>
+            </div>
+            <div class="icon">
+                <i class="fa-regular fa-heart"></i>
+                <a href="#">Notifications</a>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-plus"></i>
+                <a href="#">Create</a>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-user"></i>
+                <a href="#">Profile</a>
+            </div>
+        </div>
+        <div class="icon">
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <a href="#">More</a>
+        </div>
+
+        </div>
+    </div>
+
+    <!--Main Top Bar-->
+    <div class="main">
+        <!--STORY-->
+        <!--<div class="top-bar">
+            <div class="profile-circle"></div>
+            <div class="profile-circle"></div>
+            <div class="profile-circle"></div>
+            <div class="profile-circle"></div>
+            <div class="profile-circle"></div>
+            <div class="profile-circle"></div>
+            <div class="profile-circle"></div>
+            <div class="profile-circle"></div>
+            <div class="profile-circle"></div>
+            
+        </div>-->
+        <div class="main-container">
+            <div class="story-container">
+                <div class="story">
+                    <div class="gradient-border">
+                      <img
+                        src="profile1.jpg"
+                        alt="Profile Picture"
+                      />
+                    </div>
+                    <p>Tushar_Saini</p>
+                  </div>
+                  <div class="story">
+                    <div class="gradient-border">
+                      <img
+                        src="profile2.jpeg"
+                        alt="Profile Picture"
+                      />
+                    </div>
+                    <p>Prachi_Patel</p>
+                  </div>
+                  <div class="story">
+                    <div class="gradient-border">
+                      <img
+                        src="profile3.jpg"
+                        alt="Profile Picture"
+                      />
+                    </div>
+                    <p>Raman_Kumar</p>
+                  </div>
+                  <div class="story">
+                    <div class="gradient-border">
+                      <img
+                        src="profile4.jpg"
+                        alt="Profile Picture"
+                      />
+                    </div>
+                    <p>Ananya_Kayal</p>
+                  </div>
+                  <div class="story">
+                    <div class="gradient-border">
+                      <img
+                        src="profile5.jpg"
+                        alt="Profile Picture"
+                      />
+                    </div>
+                    <p>Ashwini_M</p>
+                  </div>
+                  <div class="story">
+                    <div class="gradient-border">
+                      <img
+                        src="post1.jpeg"
+                        alt="Profile Picture"
+                      />
+                    </div>
+                    <p>Username6</p>
+                  </div>
+                  <div class="story">
+                    <div class="gradient-border">
+                      <img
+                        src="post2.jpg"
+                        alt="Profile Picture"
+                      />
+                    </div>
+                    <p>Username7</p>
+                  </div>
+                  <div class="story">
+                    <div class="gradient-border">
+                      <img
+                        src="post3.jpeg"
+                        alt="Profile Picture"
+                      />
+                    </div>
+                    <p>Username8</p>
+                  </div>
+                  <div class="story">
+                    <div class="gradient-border">
+                      <img
+                        src="post4.jpeg"
+                        alt="Profile Picture"
+                      />
+                    </div>
+                    <p>Username9</p>
+                  </div>  
+                   
+            </div>
+        </div>
+        
+        <!-- POSTS -->
+
+        <div class="card">
+            <div class="top">
+                <div class="userDeatils">
+                    <div class="profileImg">
+                        <img src="profile1.jpg" alt="user" class="cover">
+                    </div>
+                    <h3>@Tushar_Saini<br><span>abc, STR</span></h3>
+                </div>
+                <div class="dot">
+                    ...
+                </div>
+            </div>
+            <div class="imgBg">
+                <img src="post1.jpeg" alt="pic" class="cover">
+            </div>
+            <div class="btns">
+                <div class="left">
+                    <img src="heart.jpg" alt="heart" class="heart" onclick="likeButton1()">
+                    <img src="comment.png" alt="comment">
+                    <img src="share.png" alt="share">
+                </div>
+                <div class="right">
+                    <img src="bookmark.png" alt="bookmark">
+                </div>
+            </div>
+            <h4 class="likes">5,489 likes</h4>
+            <h4 class="message">
+                <b>@Tushar_Saini</b>
+                Instagram Clone.
+                <span>#html</span>
+                <span>#css #js</span>
+            </h4>
+            <h4 class="comments">View all 546 comments</h4>
+            <div class="addComments">
+                <div class="userImg">
+                    <img src="profile2.jpeg" alt="user" class="cover">
+                </div>
+                <input type="text" class="text" placeholder="Add a comment...">
+            </div>
+            <h5 class="postTime">5 hours ago</h5>
+        </div>
+
+        <div class="card">
+            <div class="top">
+                <div class="userDeatils">
+                    <div class="profileImg">
+                        <img src="profile2.jpeg" alt="user" class="cover">
+                    </div>
+                    <h3>@Prachi_Patel<br><span>abc, STR</span></h3>
+                </div>
+                <div class="dot">
+                    ...
+                </div>
+            </div>
+            <div class="imgBg">
+                <img src="post2.jpg" alt="pic" class="cover">
+            </div>
+            <div class="btns">
+                <div class="left">
+                    <img src="heart.jpg" alt="heart" class="heart" onclick="likeButton()">
+
+                    <img src="comment.png" alt="comment">
+                    <img src="share.png" alt="share">
+                </div>
+                <div class="right">
+                    <img src="bookmark.png" alt="bookmark">
+                </div>
+            </div>
+            <h4 class="likes">5,489 likes</h4>
+            <h4 class="message">
+                <b>@Prachi_Patel</b>
+                Instagram Clone.
+                <span>#html</span>
+                <span>#css #js</span>
+            </h4>
+            <h4 class="comments">View all 546 comments</h4>
+            <div class="addComments">
+                <div class="userImg">
+                    <img src="profile5.jpg" alt="user" class="cover">
+                </div>
+                <input type="text" class="text" placeholder="Add a comment...">
+            </div>
+            <h5 class="postTime">5 hours ago</h5>
+        </div>
+
+        <div class="card">
+            <div class="top">
+                <div class="userDeatils">
+                    <div class="profileImg">
+                        <img src="profile3.jpg" alt="user" class="cover">
+                    </div>
+                    <h3>@Raman_Kumar<br><span>abc, STR</span></h3>
+                </div>
+                <div class="dot">
+                    ...
+                </div>
+            </div>
+            <div class="imgBg">
+                <img src="post3.jpeg" alt="pic" class="cover">
+            </div>
+            <div class="btns">
+                <div class="left">
+                    <img src="heart.jpg" alt="heart" class="heart" onclick="likeButton()">
+                    <img src="comment.png" alt="comment">
+                    <img src="share.png" alt="share">
+                </div>
+                <div class="right">
+                    <img src="bookmark.png" alt="bookmark">
+                </div>
+            </div>
+            <h4 class="likes">5,489 likes</h4>
+            <h4 class="message">
+                <b>@Raman_Kumar</b>
+                Instagram Clone.
+                <span>#html</span>
+                <span>#css #js</span>
+            </h4>
+            <h4 class="comments">View all 546 comments</h4>
+            <div class="addComments">
+                <div class="userImg">
+                    <img src="profile1.jpg" alt="user" class="cover">
+                </div>
+                <input type="text" class="text" placeholder="Add a comment...">
+            </div>
+            <h5 class="postTime">5 hours ago</h5>
+        </div>
+
+        <div class="card">
+            <div class="top">
+                <div class="userDeatils">
+                    <div class="profileImg">
+                        <img src="profile4.jpg" alt="user" class="cover">
+                    </div>
+                    <h3>@Ananya_Kayal<br><span>abc, STR</span></h3>
+                </div>
+                <div class="dot">
+                    ...
+                </div>
+            </div>
+            <div class="imgBg">
+                <img src="post4.jpeg" alt="pic" class="cover">
+            </div>
+            <div class="btns">
+                <div class="left">
+                    <img src="heart.jpg" alt="heart" class="heart" onclick="likeButton()">
+                    <img src="comment.png" alt="comment">
+                    <img src="share.png" alt="share">
+                </div>
+                <div class="right">
+                    <img src="bookmark.png" alt="bookmark">
+                </div>
+            </div>
+            <h4 class="likes">5,489 likes</h4>
+            <h4 class="message">
+                <b>@Ananya_Kayal</b>
+                Instagram Clone.
+                <span>#html</span>
+                <span>#css #js</span>
+            </h4>
+            <h4 class="comments">View all 546 comments</h4>
+            <div class="addComments">
+                <div class="userImg">
+                    <img src="profile2.jpeg" alt="user" class="cover">
+                </div>
+                <input type="text" class="text" placeholder="Add a comment...">
+            </div>
+            <h5 class="postTime">5 hours ago</h5>
+        </div>
+
+        <div class="card">
+            <div class="top">
+                <div class="userDeatils">
+                    <div class="profileImg">
+                        <img src="profile5.jpg" alt="user" class="cover">
+                    </div>
+                    <h3>@Ashwini_M<br><span>abc, STR</span></h3>
+                </div>
+                <div class="dot">
+                    ...
+                </div>
+            </div>
+            <div class="imgBg">
+                <img src="post5.jpeg" alt="pic" class="cover">
+            </div>
+            <div class="btns">
+                <div class="left">
+                    <img src="heart.jpg" alt="heart" class="heart" onclick="likeButton()">
+                    <img src="comment.png" alt="comment">
+                    <img src="share.png" alt="share">
+                </div>
+                <div class="right">
+                    <img src="bookmark.png" alt="bookmark">
+                </div>
+            </div>
+            <h4 class="likes">5,489 likes</h4>
+            <h4 class="message">
+                <b>@Ashwini_M</b>
+                Instagram Clone.
+                <span>#html</span>
+                <span>#css #js</span>
+            </h4>
+            <h4 class="comments">View all 546 comments</h4>
+            <div class="addComments">
+                <div class="userImg">
+                    <img src="profile4.jpg" alt="user" class="cover">
+                </div>
+                <input type="text" class="text" placeholder="Add a comment...">
+            </div>
+            <h5 class="postTime">5 hours ago</h5>
+        </div>
+    </div>
+
+    <!-- PROFILE BAR -->
+    <div class="profile-bar">
+      <div class="user-profile">
+          <div class="profile-pic"></div>
+          <div class="user-profile-content">
+              <h5>xyz_socialbook</h5>
+              <p>xyz</p>
+          </div>
+          <div class="user-profile-btn"><a href="#">Switch</a></div>
+      </div>
+      <div class="profile-suggestions">
+          <p>Suggestions for you</p>
+          <h6>See All</h6>
+      </div>
+      <div class="user-profile">
+          <div class="profile-pic"></div>
+          <div class="user-profile-content">
+              <h5>xyz_socialbook</h5>
+              <p>xyz</p>
+          </div>
+          <div class="user-profile-btn"><a href="#">Follow</a></div>
+      </div>
+      <div class="user-profile">
+          <div class="profile-pic"></div>
+          <div class="user-profile-content">
+              <h5>xyz_socialbook</h5>
+              <p>xyz</p>
+          </div>
+          <div class="user-profile-btn"><a href="#">Follow</a></div>
+      </div>
+      <div class="user-profile">
+          <div class="profile-pic"></div>
+          <div class="user-profile-content">
+              <h5>xyz_socialbook</h5>
+              <p>xyz</p>
+          </div>
+          <div class="user-profile-btn"><a href="#">Follow</a></div>
+      </div>
+      <div class="user-profile">
+          <div class="profile-pic"></div>
+          <div class="user-profile-content">
+              <h5>xyz_socialbook</h5>
+              <p>xyz</p>
+          </div>
+          <div class="user-profile-btn"><a href="#">Follow</a></div>
+      </div>
+      <div class="user-profile">
+          <div class="profile-pic"></div>
+          <div class="user-profile-content">
+              <h5>xyz_socialbook</h5>
+              <p>xyz</p>
+          </div>
+          <div class="user-profile-btn"><a href="#">Follow</a></div>
+      </div>
+      <div class="profile-footer">
+          <p><a href="#">About.</a><a href="#">Help.</a><a href="#">Press.</a><a href="#">API.</a><a href="#">Jobs.</a><a href="#">Privacy.</a></p>
+          <p><a href="#">Loactions.</a><a href="#">Language.</a><a href="#">Meta Verified.</a></p>
+      </div>
+      <div class="profile-copyright">
+          <i class="fa-regular fa-copyright"></i>
+          <p>2024 SOCIALBOOK FROM SOCIAL</p>
+      </div>
+  </div>
+
+    <script type="module" src="script.js"></script>
+    <script nomodule src="script.js"></script>
+</body>
+</html>
